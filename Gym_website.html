@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Fitness Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            /* font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive; */
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/Gym.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            /*--pahle pura line leta tha, ab jitna jaroorat hai utna*/
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+
+        .left div {
+            text-align: center;
+            margin: -20px;
+
+        }
+
+        .left img {
+            width: 80px;
+            color: white;
+            filter: invert(100%);
+            /*img ko white kar diya*/
+        }
+
+        .mid {
+            display: inline block;
+            /* display: inline-block; */
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*ye navbar ko adjust karta hai windoow size ke hisab se*/
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 7px 5px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 10px;
+        }
+
+        .btn:hover {
+            background-color: rgb(105, 78, 78);
+        }
+
+        .container {
+            border: 2px solid green;
+            margin: 59px 1016px;
+            padding: 9px;
+            width: 31%;
+            border-radius: 28px;
+
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 329px;
+            padding: 7px;
+            border: 4px solid #997171;
+            margin: 11px auto;
+            border-radius: 13px;
+            font-size: medium;
+            color: blueviolet;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/dumble.png" alt="">
+            <div id="KK">
+                Keshav Fitness
+            </div>
+            <!-- for navbar -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a> </li>
+            </ul>
+            <!-- for buttons -->
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Patna now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" Placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <!-- sara data noaction.php me jayega jo kisi back-end developer likhega-->
+
+    </div>
+
+</body>
+
+</html>
